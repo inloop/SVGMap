@@ -14,6 +14,7 @@
 		C31BFDD01E2640C700830228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31BFDCE1E2640C700830228 /* LaunchScreen.storyboard */; };
 		C31BFDDE1E26411A00830228 /* SVGMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31BFDDC1E2640E800830228 /* SVGMap.framework */; };
 		C31BFDDF1E26411A00830228 /* SVGMap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C31BFDDC1E2640E800830228 /* SVGMap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3C149321E27BCE3003491AD /* worldLow.svg in Resources */ = {isa = PBXBuildFile; fileRef = C3C149311E27BCE3003491AD /* worldLow.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		C31BFDCF1E2640C700830228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31BFDD11E2640C700830228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C31BFDD71E2640E800830228 /* SVGMap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVGMap.xcodeproj; path = ../SVGMap.xcodeproj; sourceTree = "<group>"; };
+		C3C149311E27BCE3003491AD /* worldLow.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = worldLow.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				C31BFDCC1E2640C700830228 /* Assets.xcassets */,
 				C31BFDCE1E2640C700830228 /* LaunchScreen.storyboard */,
 				C31BFDD11E2640C700830228 /* Info.plist */,
+				C3C149311E27BCE3003491AD /* worldLow.svg */,
 			);
 			path = SVGMapExample;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C149321E27BCE3003491AD /* worldLow.svg in Resources */,
 				C31BFDD01E2640C700830228 /* LaunchScreen.storyboard in Resources */,
 				C31BFDCD1E2640C700830228 /* Assets.xcassets in Resources */,
 				C31BFDCB1E2640C700830228 /* Main.storyboard in Resources */,

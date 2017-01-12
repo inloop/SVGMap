@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C36425DF1E263CB800D5B157 /* SVGMap.h in Headers */ = {isa = PBXBuildFile; fileRef = C36425DD1E263CB800D5B157 /* SVGMap.h */; };
+		C36425DF1E263CB800D5B157 /* SVGMap.h in Headers */ = {isa = PBXBuildFile; fileRef = C36425DD1E263CB800D5B157 /* SVGMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3B505F41E27888600AF908D /* SVGMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B505F31E27888600AF908D /* SVGMapView.swift */; };
+		C3B505F61E27AD3D00AF908D /* SVGMapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B505F51E27AD3D00AF908D /* SVGMapLabel.swift */; };
+		C3B505F81E27ADE000AF908D /* SVGMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B505F71E27ADE000AF908D /* SVGMapData.swift */; };
+		C3B505FA1E27B2CB00AF908D /* SVGMapPathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B505F91E27B2CB00AF908D /* SVGMapPathElement.swift */; };
+		C3B505FC1E27B3AF00AF908D /* SVGMapUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B505FB1E27B3AF00AF908D /* SVGMapUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C36425D11E263BD500D5B157 /* SVGMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVGMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36425DC1E263CB800D5B157 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
 		C36425DD1E263CB800D5B157 /* SVGMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVGMap.h; path = Source/SVGMap.h; sourceTree = SOURCE_ROOT; };
+		C3B505F31E27888600AF908D /* SVGMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVGMapView.swift; path = Source/SVGMapView.swift; sourceTree = SOURCE_ROOT; };
+		C3B505F51E27AD3D00AF908D /* SVGMapLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVGMapLabel.swift; path = Source/SVGMapLabel.swift; sourceTree = SOURCE_ROOT; };
+		C3B505F71E27ADE000AF908D /* SVGMapData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVGMapData.swift; path = Source/SVGMapData.swift; sourceTree = SOURCE_ROOT; };
+		C3B505F91E27B2CB00AF908D /* SVGMapPathElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVGMapPathElement.swift; path = Source/SVGMapPathElement.swift; sourceTree = SOURCE_ROOT; };
+		C3B505FB1E27B3AF00AF908D /* SVGMapUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SVGMapUtils.swift; path = Source/SVGMapUtils.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +58,11 @@
 			children = (
 				C36425DC1E263CB800D5B157 /* Info.plist */,
 				C36425DD1E263CB800D5B157 /* SVGMap.h */,
+				C3B505F31E27888600AF908D /* SVGMapView.swift */,
+				C3B505F51E27AD3D00AF908D /* SVGMapLabel.swift */,
+				C3B505F71E27ADE000AF908D /* SVGMapData.swift */,
+				C3B505F91E27B2CB00AF908D /* SVGMapPathElement.swift */,
+				C3B505FB1E27B3AF00AF908D /* SVGMapUtils.swift */,
 			);
 			path = SVGMap;
 			sourceTree = "<group>";
@@ -96,6 +111,7 @@
 					C36425D01E263BD500D5B157 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 74JL49Z2D8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B505F61E27AD3D00AF908D /* SVGMapLabel.swift in Sources */,
+				C3B505F41E27888600AF908D /* SVGMapView.swift in Sources */,
+				C3B505FC1E27B3AF00AF908D /* SVGMapUtils.swift in Sources */,
+				C3B505F81E27ADE000AF908D /* SVGMapData.swift in Sources */,
+				C3B505FA1E27B2CB00AF908D /* SVGMapPathElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +261,7 @@
 		C36425DA1E263BD500D5B157 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 74JL49Z2D8;
@@ -252,6 +274,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.inloop.SVGMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +282,7 @@
 		C36425DB1E263BD500D5B157 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 74JL49Z2D8;
